@@ -1,0 +1,31 @@
+
+Assigment 
+
+Small Steam like enterprise
+
+Name: Smoking Games
+
+Description: Smoking games it's an enterprise that digitally distributes games, created by themselfs or third party games.
+	The enterprise has the following structure:
+Image
+
+CEO
+Marketing -> 6 people + Officer
+Finance -> 4 people + Officer
+IT -> 5-6 people + Officer
+	-Code maintenance: 3 people
+	-System and Network administration: 2-3 people
+Customer service -> 4 people + officer
+Creative team -> 6-8 people + Officer
+	-Software Development: 3-5 people
+	-Graphic Design: 3 people
+HR Department -> 2 people No Officer
+
+Workers: 33-36 people
+
+References:
+
+Michael E. Whitman and Herbert J.Mattford. Principles of Incident Response and Disaster
+Recovery
+
+Business and IT Continuity: Overview and Implementation Principles is a deliverable by the European Union Network and Information Security Agency (ENISA) that elaborates on continuity risks and contains an overview of numerous Business Continuity models
