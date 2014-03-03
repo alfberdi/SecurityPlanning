@@ -1,6 +1,6 @@
 %% 'gucreport.cls' - a LaTeX class for reports at GUC, based upon gucthesis.cls
 %%
-%% Copyright (C) 2014 Magnus Øverbø
+%% Copyright (C) 2014 Magnus Ã˜verbÃ¸
 %% 'gucthesis.cls' - Copyright (C) 2005 Ivar Farup and Kjetil Orbekk
 %%
 %% CHANGE LOG:
@@ -77,7 +77,7 @@
 \ProvidesClass{gucreport}
   [\gucrepd\space
    v\gucrepv\space
-   Copyright (C) 2014 Magnus Øverbø.
+   Copyright (C) 2014 Magnus Ã˜verbÃ¸.
 	 Based on the gucthesis class by Ivar Farup and Simon McCallum]
 
 %% CLASS FILE COMMANDS
@@ -518,12 +518,12 @@
 				\fi
 					{\fontsize{15}{20}\selectfont \pagecount }\\[1mm]
 				
-				\if@norsk
-					{\fontsize{15}{20}\selectfont	Antall ord:} &
-				\else
-					{\fontsize{15}{20}\selectfont	Word count:} &
-				\fi
-					{\fontsize{15}{20}\selectfont \wordcount }\\[1mm]
+				%%\if@norsk
+					%%{\fontsize{15}{20}\selectfont	Antall ord:} &
+				%%\else
+					%%{\fontsize{15}{20}\selectfont	Word count:} &
+				%%\fi
+					%%{\fontsize{15}{20}\selectfont \wordcount }\\[1mm]
 				
 				\if@norsk
 					{\fontsize{15}{20}\selectfont	Vedlegg:} &
@@ -532,12 +532,12 @@
 				\fi
 					{\fontsize{15}{20}\selectfont \appnumber }\\[1mm]
 				
-				\if@norsk
-					{\fontsize{15}{20}\selectfont	N\o{}kkelord:} &
-				\else
-					{\fontsize{15}{20}\selectfont	Keywords:} &
-				\fi
-					{\fontsize{15}{20}\selectfont \keywords }
+				%%\if@norsk
+					%%{\fontsize{15}{20}\selectfont	N\o{}kkelord:} &
+				%%\else
+					%%{\fontsize{15}{20}\selectfont	Keywords:} &
+				%%\fi
+					%%{\fontsize{15}{20}\selectfont \keywords }
 			\end{tabular}\\[5mm]
     \end{center}
 		
