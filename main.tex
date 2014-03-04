@@ -1,0 +1,36 @@
+%% Languages: norsk				
+%%						english			
+%% Styles:		twoside, 		The margins will differ dependent on right/left pages
+%%						openright		The first page is a "right" page
+%%  indexes:		listings		Show figure list, table list
+%%						glossary		Show glossary and abbreviation list
+%%						todo				Show list of todo-notes in documents
+%%						%
+\documentclass[english]{gucreport}
+\input{gucreport}
+
+\begin{document}
+	\input{glossary}
+	\makefrontpages
+	\tableofcontents
+	\showindex		%%lists of figures, codes, tables, glossary, etc
+	
+	%% Chapters for the text
+	\input{Chapters/Business_Description}
+	%\input{Chapters/}
+	%\input{Chapters/}
+	%\input{Chapters/}
+	%\input{Chapters/}
+	%\input{Chapters/}
+	%\input{Chapters/}
+
+	%% Bibliography
+	\bibliographystyle{unsrt}
+	\bibliography{main}
+
+	%% APPENDICES
+	\appendix %after this line all chapters will have leters instead of numbers
+%	\input{appendices}	%include file for all appendices
+
+\end{document}
+
