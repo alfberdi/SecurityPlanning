@@ -368,7 +368,7 @@
   }}
 
 % Table of contents
-\def\l@chapter#1#2{\@dottedtocline{1}{0em}{1.5em}{\bf #1}{\bf #2}}
+%\def\l@chapter#1#2{\@dottedtocline{1}{0em}{1.5em}{\bf #1}{\bf #2}}
 
 % Table and figure captions
 \long\def\@makecaption#1#2{%
