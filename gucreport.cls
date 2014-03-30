@@ -105,6 +105,7 @@
 \RequirePackage{bbding}
 \RequirePackage{caption}
 \RequirePackage{todonotes}
+\RequirePackage{hyperref}
 
 %	Counters
 \newcounter{firstchapter}       % hack to find out where to start
