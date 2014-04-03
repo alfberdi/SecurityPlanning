@@ -1,0 +1,24 @@
+\newpage
+\section{Risk Identification}\label{RiskIdent}
+A business like Smoking Games faces a wide variety of threats. Therefore it is necessary to consider every possible threat, what impact it might have on the business and how to control it. In the following we will focus on the realistic threads, while the unimportant threats are set aside, since the project's scope will otherwise overwhelm the organization's ability to plan.
+\subsection{Threat Assessment}
+Table \ref{tab:Threats1} represents threats to Smoking Games. Each threat is assessed on a scale of 1 to 10 (with 1 being low and 10 being high), regarding the level of danger or impact it has on the company, the cost to recover from, and the expenditure to prevent it.\\
+\begin{table}[h]
+	\centering
+	\begin{tabular}{| l | l | l | l |}
+		\hline
+		\textbf{Threat Category} & \textbf{\parbox[t]{2cm}{Danger/\\Impact}} & \textbf{\parbox[t]{2cm}{Recovery\\Cost}} & \textbf{\parbox[t]{2cm}{Prevention\\Expenditure}}\\\hline
+		Espionage or trespass & 10 & 8 & 7\\\hline
+		Software attacks & 9 & 7 & 8\\\hline
+		Human error or failure & 8 & 7 & -\\\hline
+		Theft & 7 & 6 & 7\\\hline
+		Compromises of intellectual property & 6 & 6 & 6\\\hline
+		Sabotage or vandalism & 5 & 7 & 5\\\hline
+		Technical software failures or errors & 4 & 6 & 5\\\hline
+		Forces of nature & 8 & 8 & 7\\\hline
+		\parbox[t]{5cm}{Deviations in quality of service from service providers} & 8 & 7 & 8\\\hline
+		Technologial obsolescence & 4 & 6 & 6\\\hline
+		Information extortion & 5 & 7 & 7\\\hline
+	\end{tabular}
+	\caption{Threats to Smoking Games}\label{tab:Threats1}
+\end{table}
