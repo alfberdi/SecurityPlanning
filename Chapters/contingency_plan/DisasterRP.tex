@@ -1,2 +1,170 @@
+\section{Disaster Response Plan}
+The disaster response plan describes the actions to be taken by the disaster response team during an escalated incident scenario or disaster scenario. The template is extracted from ”Principles of Information Security and Disaster Recovery”\ref{whitman6} and describes the response plan step by step. First it describes the same as incident planning of the organizational aspect before the instruction set is shown. Then it describes the steps to take during the disaster, before stating when a disaster is officially ended. Then it might be over or it might escalate and the business continuity plan needs to be invoked. The plans also covers recovery on the primary site regardless of the business continuity plan.
+\subsection{Fire}
+\begin{longtable}{| p{4cm} | p{8cm} |}
+	\hline \multicolumn{2}{| c |}{\textbf{Fire}}\\\hline
+	\hline \multicolumn{2}{| c |}{\textbf{Disaster Response Plan}}
+	\endfirsthead
+	
+	\hline \multicolumn{2}{| c |}{\textbf{Fire}...continued}\\\hline
+	\hline \multicolumn{2}{| c |}{Disaster Response Plan}
+	\endhead
+	
+	\multicolumn{2}{|r|}{\textit{continued on next page}}\\\hline
+	\endfoot
+	
+	\endlastfoot
+	
+	\textbf{Disaster type:} & Fire \\\hline
+	\textbf{Trigger:} & 
+	\begin{description}
+	\item escalating incident which threatens structural integrity
+	\item internal fire
+	\end{description} \\\hline
+	
+	\textbf{Team lead:} & IT-manager, back-up CEO \\\hline
+	\textbf{Notification method:} & Verbal communication by telephone or VoIP, or physical interaction.\\\hline
+	\textbf{Response time:} & Should be initiated within 10min.\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions to be taken during this response:}}\\\hline
+	\multicolumn{2}{| c |}{
+		\item[:] Notify local fire department
+		\item[:] Assess the situation with fire department and severity in mind
+		\item[:] Notify CEO and other officers by phone, VoIP, physical interaction or physically by inside post service
+		\item[:] Shut down IT-systems
+		\item[:] Evacuate the building
+		\item[:] Restrict access to premises
+	\end{enumerate}}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions during disaster are complete when:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{itemize}
+		\item The incident is successfully mitigated
+		\item Buildings are successfully evacuated
+		\item IT-systems are securely shut down
+	\end{itemize}
+	}\\\hline
+	
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Notify everyone on the DR-notification list
+		\item Assess the damage level and time to restore to pre-disaster state
+		\item Consult a construction team to repair the building's structure
+		\item If business relocation or replacement of IT-system is needed invoke the corresponding Business Contingency Plan
+		\item Restore functionality of IT-system
+		\item Correlate information and restore any lost information
+		\item Perform damage assessment and file claim to insurance company
+		\item Restore normal business function at primary location
+		\item Hold an AAR-meeting to review the actions taken during the incident
+		\item Resume normal business functionality
+	\end{enumerate}
+	}\\\hline	
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster are complete when:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{itemize}
+		\item Full business functionality is restored at primary or secondary location
+	\end{itemize}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Review the disaster response planas instructed by the policy
+		\item Training for emergency evacuation as instructed by the policy
+		\item Review systems for diverting fire
+	\end{enumerate}
+	}\\\hline
+\end{longtable}
 
-\section{Disaster recovery plan}
+\subsection{Denial of Service Attack}
+\begin{longtable}{| p{4cm} | p{8cm} |}
+	\hline \multicolumn{2}{| c |}{\textbf{Denial of Service Attack}}\\\hline
+	\hline \multicolumn{2}{| c |}{\textbf{Disaster Response Plan}}
+	\endfirsthead
+	
+	\hline \multicolumn{2}{| c |}{\textbf{DoS}...continued}\\\hline
+	\hline \multicolumn{2}{| c |}{Disaster Response Plan}
+	\endhead
+	
+	\multicolumn{2}{|r|}{\textit{continued on next page}}\\\hline
+	\endfoot
+	
+	\endlastfoot
+	
+	\textbf{Disaster type:} & Disaster of Service Attack \\\hline
+	\textbf{Trigger:} & 
+	\begin{description}
+		\item All webservers are affected and not responding
+	\end{description} \\\hline
+	
+	\textbf{Team lead:} & CTO and system administrator, IT-managers \\\hline
+	\textbf{Notification method:} & Verbal communication by telephone or physical interaction\\\hline
+	\textbf{Response time:} & Should be initiated within 30min\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions to be taken during disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item{:} Notify everyone on the DR-notification list
+		\item{:} Assess the situation with fire department and sevirity in mind.
+		\item{:} Notify CEO and other officers by phone, VoIP, physical interaction or physically by inside post service.
+		\item{:} Shut down IT-systems
+		\item{:} Evacuate the building
+		\item{:} Restrict access to premises
+	\end{enumerate}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions during disaster are complete when:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{itemize}
+		\item The incident is successfully mitigated
+		\item Buildings are successfully evacuated
+		\item IT-systems are securely shut down
+	\end{itemize}
+	}\\\hline
+	
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Notify everyone on the DR-notification list
+		\item Cut internet connection to affected servers	
+		\item Hold meeting with all IT managers and CEO	
+		\item Assess the damage level and time to restore to pre-disaster state
+		\item Check logs for severity of attack and data losses
+		\item Restore functionality of IT-system
+		\item Correlate information and restore any lost information
+		\item Report incident to the authorities
+		\item Resume normal business functionality
+	\end{enumerate}
+	}\\\hline	
+	\multicolumn{2}{| c |}{\textbf{Actions during disaster are complete when:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{itemize}
+		\item Affected systems are shut down and isolated
+		\item The disaster is properly mitigated
+	\end{itemize}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item If IT-systems were taken down, assess need for replacement
+		\item If replacement is needed, invoke the corresponding BCP for replacing the IT-systems
+		\item Determine origin of attack and collaborate with local authorities
+		\item Close the vulnerability
+		\item Determine the extend of the damage
+		\item Correlate and recover lost or damaged information
+		\item Restore proper business function to IT-systems
+		\item Close the case with a formal report and debrief all involved parties
+		\item Hold a meeting between CEO and all IT-managers
+	\end{enumerate}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions after disaster are complete, when:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Original or new IT-system is restored to normal business functionality
+	\end{enumerate}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions before disaster:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Employee awareness training
+		\item IT-department training about response and digital forensic
+	\end{enumerate}
+	}\\\hline
+\end{longtable}
