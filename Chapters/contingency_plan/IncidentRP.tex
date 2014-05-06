@@ -8,11 +8,11 @@ In addition to the incident response plan it is added a shortened incident respo
 
 \begin{longtable}{| p{4cm} | p{8cm} |}
 	\hline \multicolumn{2}{| c |}{\textbf{Fire}}\\\hline
-	\hline \multicolumn{2}{| c |}{\textbf{Incident detection plan}}
+	\multicolumn{2}{| c |}{\textbf{Incident detection plan}}\\\hline
 	\endfirsthead
 	
 	\hline \multicolumn{2}{| c |}{\textbf{Fire}...continued}\\\hline
-	\hline \multicolumn{2}{| c |}{Incident detection plan}
+	\multicolumn{2}{| c |}{Incident detection plan}\\\hline
 	\endhead
 	
 	\multicolumn{2}{|r|}{\textit{continued on next page}}\\\hline
@@ -65,11 +65,11 @@ In addition to the incident response plan it is added a shortened incident respo
 	
 \begin{longtable}{| p{4cm} | p{8cm} |}
 	\hline \multicolumn{2}{| c |}{\textbf{Fire}}\\\hline
-	\hline \multicolumn{2}{| c |}{\textbf{Incident detection plan}}
+	\multicolumn{2}{| c |}{\textbf{Incident detection plan}}\\\hline
 	\endfirsthead
 	
 	\hline \multicolumn{2}{| c |}{\textbf{Fire}...continued}\\\hline
-	\hline \multicolumn{2}{| c |}{Incident detection plan}
+	\multicolumn{2}{| c |}{Incident detection plan}\\\hline
 	\endhead
 	
 	\multicolumn{2}{|r|}{\textit{continued on next page}}\\\hline
@@ -94,22 +94,41 @@ In addition to the incident response plan it is added a shortened incident respo
 		\item{:} Overview of the report by IT-manager to evaluate the incident
 		\item{:} Mobilize IR Team
 		\item{:} Evacuate and gather employees outside the building for a head count.
-		\item{:} 
+		\item{:} Call the authorities if it was not them giving notice
+		\item{:} Inspect the building for possible inside fires. In case of inside fire escalate to disaster
+		\item{:} Engage backup procedures
+		\item{:} If needed request help from the local authorities
 	\end{enumerate}
 	}\\\hline
-	\multicolumn{2}{| c |}{\textbf{Incident detection ends when:}}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Incident response ends when:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{itemize}
-		\item 
-		\item 
+		\item All the personnel is secure
+		\item The fire is mitigated
+		\item The infrastructure is secured
 	\end{itemize}
 	}\\\hline
 	
+	\multicolumn{2}{| c |}{\textbf{Actions to be taken after incident response is ended:}}\\\hline
+	\multicolumn{2}{| c |}{
+	\begin{enumerate}
+		\item Asses damage level
+		\item Recover data losses from most recent backup
+		\item Recover basic business operations
+		\item Recover less basic business operations
+		\item Assess incident cost
+		\item File claim to the insurance company
+		\item Hold AAR meeting 
+	\end{enumerate}
+	}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Incident follow-up is ended and actions after the incident is complete when:}}\\\hline
+	\multicolumn{2}{| c |}{All the business procedures are working properly in the primary or second location}\\\hline
 	\multicolumn{2}{| c |}{\textbf{Preparation actions to be integrated into IR plans before incident response plan is needed:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{enumerate}
-		\item 
-		\item 
+		\item Training personnel for an evacuation inside the recommended time
+		\item Training for performing a good backup procedure
+		\item Training the CSO to perform a correct assessment of a fire situation
 	\end{enumerate}
 	}\\\hline
 	
@@ -124,11 +143,11 @@ In addition to the incident response plan it is added a shortened incident respo
 
 \begin{longtable}{| p{4cm} | p{8cm} |}
 	\hline \multicolumn{2}{| c |}{\textbf{Denial of Service Attack}}\\\hline
-	\hline \multicolumn{2}{| c |}{\textbf{Incident detection plan}}
+	\multicolumn{2}{| c |}{\textbf{Incident detection plan}}\\\hline
 	\endfirsthead
 	
 	\hline \multicolumn{2}{| c |}{\textbf{Denial of Service Attack}...continued}\\\hline
-	\hline \multicolumn{2}{| c |}{Incident detection plan}
+	\multicolumn{2}{| c |}{Incident detection plan}\\\hline
 	\endhead
 	
 	\multicolumn{2}{|r|}{\textit{continued on next page}}\\\hline
@@ -137,33 +156,38 @@ In addition to the incident response plan it is added a shortened incident respo
 	\endlastfoot
 	
 	\textbf{Attack type:} & Denial of Service Attack \\\hline
-	\textbf{Trigger:} &\\\hline
+	\textbf{Trigger:} &
+	\begin{itemize}
+		\item Warning from the authorities about possible cyber attacks
+		\item Small tryals to perform a DDoS attack
+		\item New games launch
+		\item Slower connections or users complaints
+	\end{itemize}\\\hline
 	
-	\textbf{Reaction force and lead:} &  \\\hline
-	\textbf{Notification method:} &  \\\hline
-	\textbf{Response time:} &  \\\hline
+	\textbf{Reaction force and lead:} &  All employees from the IT and customer support department \\\hline
+	\textbf{Notification method:} &  Physically, physical interaction or telephone\\\hline
+	\textbf{Response time:} &  10 minutes since first notice until telling the IT-manager and maximum 30 minutes until the end of the detection \\\hline
 	\multicolumn{2}{| c |}{\textbf{Actions to be taken during this response:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{enumerate}
-		\item{:} 
-		\item{:} 
-		\item{:} 
-		\item{:} 
+		\item{:} Find out if the suspicions are real
+		\item{:} Contact IT-manager
+		\item{:} Assessment of the state of the systems and the external services by the IT-manager
+		\item{:} If considered elevate state to incident
 	\end{enumerate}
 	}\\\hline
 	\multicolumn{2}{| c |}{\textbf{Incident detection ends when:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{itemize}
-		\item 
-		\item 
+		\item The case is escalated to incident 
+		\item The profile is discarded
 	\end{itemize}
 	}\\\hline
 	
 	\multicolumn{2}{| c |}{\textbf{Preparation actions to be integrated into IR plans before incident response plan is needed:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{enumerate}
-		\item 
-		\item 
+		\item Training employees of the involved departments to detect such attack
 	\end{enumerate}
 	}\\\hline
 	
@@ -176,7 +200,7 @@ In addition to the incident response plan it is added a shortened incident respo
 
 \begin{longtable}{| p{4cm} | p{8cm} |}
 	\hline \multicolumn{2}{| c |}{\textbf{Denial of Service Attack}}\\\hline
-	\hline \multicolumn{2}{| c |}{\textbf{Incident response plan}}
+	\multicolumn{2}{| c |}{\textbf{Incident response plan}}\\\hline
 	\endfirsthead
 	
 	\hline \multicolumn{2}{| c |}{\textbf{Denial of Service Attack}...continued}\\\hline
@@ -191,36 +215,47 @@ In addition to the incident response plan it is added a shortened incident respo
 	\textbf{Attack type:} & Denial of Service Attack \\\hline
 	\textbf{Trigger:} & 
 	\begin{description}
-	\item 
-	\item 
-	\item
+	\item Escalated incident from the detection phase
+	\item Slow or really bad connection to the net
+	\item Servers down for excesive connection rates
 	\end{description} \\\hline
 	
-	\textbf{Reaction force and lead:} &  \\\hline
-	\textbf{Notification method:} &  \\\hline
-	\textbf{Response time:} &  \\\hline
+	\textbf{Reaction force and lead:} &  IT-manger, IR team and  CEO\\\hline
+	\textbf{Notification method:} &  Physically, telephone or physical interaction\\\hline
+	\textbf{Response time:} &  30 minutes to take the first steps and up to 1 hour to recover normal operation\\\hline
 	\multicolumn{2}{| c |}{\textbf{Actions to be taken during this response:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{enumerate}
-		\item{:} 
-		\item{:} 
-		\item{:} 
-		\item{:} 
+		\item{:} Assessment of the report by the IT-manager
+		\item{:} Assessment of the current state of the attack and prevision of the evolution
+		\item{:} In case of decreasing attack diverse extra traffic and wait for evolution of the attack
+		\item{:} If not enough take in place strong counter measures 
+		\item{:} In case of servers falldown escalate incident to disaster
+		\item{:} If the countermeasures take control raise alarm for further possible attacks
 	\end{enumerate}
 	}\\\hline
-	\multicolumn{2}{| c |}{\textbf{Incident detection ends when:}}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Incident response ends when:}}\\\hline
+	\multicolumn{2}{| c |}{Attack ends or there is only residual bots attacking}\\\hline
+	\multicolumn{2}{| c |}{\textbf{Actions to be taken after incident response is ended:}}\\\hline
 	\multicolumn{2}{| c |}{
-	\begin{itemize}
-		\item 
-		\item 
-	\end{itemize}
+	\begin{enumerate}
+		\item Asses damage level
+		\item Look for further attacks
+		\item Recover data losses from most recent backup
+		\item Recover basic business operations
+		\item Recover less basic business operations
+		\item Assess incident cost
+		\item Call the authorities 
+		\item Hold AAR meeting 
+	\end{enumerate}
 	}\\\hline
-	
+	\multicolumn{2}{| c |}{\textbf{Incident follow-up is ended and actions after the incident is complete when:}}\\\hline
+	\multicolumn{2}{| c |}{All the business procedures are working properly in the primary location}\\\hline
 	\multicolumn{2}{| c |}{\textbf{Preparation actions to be integrated into IR plans before incident response plan is needed:}}\\\hline
 	\multicolumn{2}{| c |}{
 	\begin{enumerate}
-		\item 
-		\item 
+		\item Train IT department in the assessment of a DDoS attack
+		\item Keep a secure front end against external attacks
 	\end{enumerate}
 	}\\\hline
 	
