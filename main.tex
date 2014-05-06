@@ -6,18 +6,29 @@
 %%						glossary		Show glossary and abbreviation list
 %%						todo				Show list of todo-notes in documents
 %%						%
-\documentclass[english]{gucreport}
-\input{gucreport}
+\documentclass[medieteknikk]{gucmasterthesis}
 %\renewcommand{\familydefault}{\sfdefault}
 %\rmfamily
 
+\usepackage[utf8]{inputenc}     % For utf8 encoded .tex files
+\usepackage{ifthen}
+\usepackage[english]{babel}     % For chapter headings etc.
+\usepackage{graphicx}
+\usepackage{longtable}
+
 \begin{document}
 	%\input{glossary}
+	\title{Project Report: Traceroute}
+	\thesistitle{Project Report: Traceroute}
+	\thesisauthor{Leonard Eschenbaum, Adri\'an Alberdi Ainciburu}
+	\thesisdate{\gucmasterthesisdate}
+	\useyear{2014}
 	\makefrontpages
-	\tableofcontents
-	\showindex		%%lists of figures, codes, tables, glossary, etc
+	
+	
 	
 	%% Chapters for the text
+	%\chapter{Business description}
 	\input{Chapters/Business_Description}
 	\input{Chapters/Business_Impact_Analysis}
 	\input{Chapters/contingency_plan}
@@ -25,41 +36,6 @@
 	%% Bibliography
 	\bibliographystyle{unsrt}
 	\bibliography{main}
-	\begin{thebibliography}{99}
-		\bibitem{whitman1}
-			Michael E. Whitman and Herbert J. Mattford.
-			\emph{Principles of Incident Response and Disaster Recovery}.
-			pages 55–69.
-			Course Technology, 2007.
-			
-		\bibitem{whitman2}
-			Michael E. Whitman and Herbert J. Mattford.
-			\emph{Principles of Incident Response and Disaster Recovery}.
-			chapter 2, 	pages 60–61.
-			Course Technology, 2007.
-			Table 2-2.
-			
-		\bibitem{whitman3}
-			Michael E. Whitman and Herbert J. Mattford.
-			\emph{Principles of Incident Response and Disaster Recovery}.
-			page 62.
-			Course Technology, 2007.
-			Table 2-3
-			
-		\bibitem{whitman4}
-			Michael E. Whitman and Herbert J. Mattford.
-			\emph{Principles of Incident Response and Disaster Recovery}.
-			page 63.
-			Course Technology, 2007.
-			Example of A Malicious Code Attack Scenario
-			
-		\bibitem{whitman5}
-			Michael E. Whitman and Herbert J. Mattford.
-			\emph{Principles of Incident Response and Disaster Recovery}.
-			pages 67-68
-			Course Technology, 2007.
-			Malicious Code Attack Scenario Addendum
-	\end{thebibliography}
 
 	%% APPENDICES
 	\appendix %after this line all chapters will have leters instead of numbers
