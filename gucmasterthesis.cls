@@ -178,7 +178,7 @@
 
 \renewcommand\chapter{%\if@openright\cleardoublepage\else\clearpage\fi
   \cleardoublepage
-%  \thispagestyle{plain}%
+ \thispagestyle{plain}%
   \global\@topnum\z@
   \@afterindentfalse
   \secdef\@chapter\@schapter}
@@ -189,9 +189,9 @@
   \c@figure=\c@tmpfig
   \c@table=\c@tmptab
   \ifnum\c@firstchapter = 1     % hack for page numbering
-  \pagenumbering{arabic}
-  \c@page=1 \c@firstchapter=0
-  \fi
+ \pagenumbering{arabic}
+ \c@page=1 \c@firstchapter=0
+ \fi
   \typeout{\@chapapp\space\thechapter.}%
   \phantomsection
   \addcontentsline{toc}{chapter}%
@@ -201,10 +201,10 @@
   \addcontentsline{toc}{chapter}{#1}%
   \fi
   \chaptermark{#1}%
-% Add extra space in list of figures and list of tables between
-% figures & tables belonging to different chapters:
-%  \addtocontents{lof}{\protect\addvspace{10\p@}}%
-%  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+ Add extra space in list of figures and list of tables between
+ figures & tables belonging to different chapters:
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
   \if@twocolumn
   \@topnewpage[\@makechapterhead{{#2}}]%
   \else
@@ -352,8 +352,8 @@ Use $\backslash$useyear\{<year>\} to set year.
 
 \DeclareOption{medieteknikk}{%
   \renewcommand\gmt@firstpagetext{%
-    IMT2431 \\
-    Data Communication and Network Security \\
+    IMT3521 \\
+    Introduction to security planning and incident management \\
     H\o{}gskolen i Gj\o{}vik, \gmt@frontpagesyear
   }
   \renewcommand\gmt@secondpagetext{\gmt@imttext}
@@ -413,7 +413,7 @@ Use $\backslash$useyear\{<year>\} to set year.
         \lineskip .75em%
         \begin{tabular}[t]{c}%
           %{\fontsize{14}{16}\selectfont \thesis@author \par} %\@author
-          {\fontsize{14}{16}\selectfont Leonard Eschenbaum\v{s} \par} \\ %\@author
+          {\fontsize{14}{16}\selectfont Leonard Eschenbaum\par} \\ %\@author
           {\fontsize{14}{16}\selectfont Adri\'{a}n Alberdi Ainciburu \par} \\ %\@author
         \end{tabular}\par}%
       % \vskip 1.5em%
