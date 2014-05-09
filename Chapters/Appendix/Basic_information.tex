@@ -1,87 +1,61 @@
 \chapter{Basic information}
 Table \ref{tab:emergency_call}, \ref{tab:emergency_loc} and \ref{tab:emergency_out} are based on templates from the book Principles of incident response and disaster recovery  which was collected from Texas State library
 
-\begin{longtable}{| p{4cm}  p{4cm}  p{4cm}|}
-	\caption{ An example over how an Emergency call sheet might look like, some sample emergencies are included.}
-	\label{tab:emergency_call}
-	\hline \multicolumn{3}{| c |}{\textbf{Emergency call sheet}}\\\hline
-	\endfirsthead
-	
-	\hline \multicolumn{3}{| c |}{\textbf{Emergency call sheet}}\\\hline
-	\endhead
-	
-	\multicolumn{3}{| r |}{\textit{continued on next page}}\\\hline
-	\endfoot
-	
-	\endlastfoot
-	
-	\textbf{Service:} & \textbf{Contact person:} & \textbf{Number:}\\\hline
+\begin{table}
+
+	\begin{tabular}{| p{4cm}  p{4cm}  p{4cm} |}
+	\hline \multicolumn{3}{| p{12cm} |}{\textbf{Emergency call sheet}}\\\hline 		\textbf{Service:} & \textbf{Contact person:} & \textbf{Number:}\\\hline
 	Ambulance & Aspirino Gonzalez Madro\~no & 141 593 653 \\
 	Police & Officer Torrente & 589 793 338 \\
 	Fire department & Helena los del Rio & 463 643 383 \\
 	Electrician & Manolo el del Bombo & 379 503 884 \\
 	Plumber & Alfonzo Torrente & 197 169 399 \\\hline	
-\end{longtable}
+	\end{tabular}
+	
+	\caption{ An example over how an Emergency call sheet might look like, some sample emergencies are included.}
+	\label{tab:emergency_call}
+\end{table}
 
-\begin{longtable}{| p{4cm}  p{4cm}  p{4cm}|}
-	\caption{ An example of how to enumerate all emergency equipment, should be placed on map.}
-	\label{tab:emergency_loc}
-	\hline \multicolumn{3}{| c |}{\textbf{Location of emergency system}}\\\hline
-	\endfirsthead
+\begin{table}
+
+	\begin{tabular}{| p{4cm}  p{4cm}  p{4cm} |}
 	
 	\hline \multicolumn{3}{| c |}{\textbf{Location of emergency system}}\\\hline
-	\endhead
-	
-	\multicolumn{3}{|r|}{\textit{continued on next page}}\\\hline
-	\endfoot
-	
-	\endlastfoot
-	
 	\textbf{Emergency:} & \textbf{Placement:} & \\\hline
 	Fire extinguisher & At the meeting room & \\
 	Electricity & Basement & \\\hline	
-\end{longtable}
+	\end{tabular}
+	
+	\caption{ An example of how to enumerate all emergency equipment, should be placed on map.}
+	\label{tab:emergency_loc}
+\end{table}
 
-\begin{longtable}{| p{4cm}  p{4cm}  p{4cm}|}
-	\caption{ An example of how to enumerate all equipment not in company care, and how to reach a contact employee.}
-	\label{tab:emergency_out}
+\begin{table}
+
+	\begin{tabular}{| p{4cm}  p{4cm}  p{4cm} |}
 	\hline \multicolumn{3}{| c |}{\textbf{Equipment outside the company}}\\\hline
-	\endfirsthead
-	
-	\hline \multicolumn{3}{| c |}{\textbf{Equipment outside the company}}\\\hline
-	\endhead
-	
-	\multicolumn{3}{|r|}{\textit{continued on next page}}\\\hline
-	\endfoot
-	
-	\endlastfoot
-	
+		
 	\textbf{Item:} & \textbf{Contact/company:} & \textbf{Number:}\\\hline
 	Backup web server & jaja.com & 375105830\\
 	Security & Securitas direct & 974944593\\
 	Water supply & Elcanal & 307816406\\\hline	
-\end{longtable}
+	\end{tabular}
+	\caption{ An example of how to enumerate all equipment not in company care, and how to reach a contact employee.}
+	\label{tab:emergency_out}
+\end{table}
 
 The numbers in table \ref{tab:salvage_prio} are based on the following criteria. The rating is inspired by the book Principles of incident response and disaster recovery.
-\begin{enum}
+\begin{enumerate}
 \item Salvage at all costs.
 \item Salvage if time allows it.
 \item Dispose of as part of general cleanup.
-\end{enum}
+\end{enumerate}
 
-\begin{longtable}{| p{4cm}  p{4cm}  p{4cm}|}
-	\caption{ List of all assets in priority human lives are not in the list, but always have top priority. This list shall be followed when several assets are at risk from one or several incidents at the same time.}
-	\label{tab:salvage_prio}
+\begin{table}
+
+	\begin{tabular}{| p{4cm}  p{4cm}  p{4cm} |}
 	\hline \multicolumn{3}{| c |}{\textbf{Salvage priority list}}\\\hline
-	\endfirsthead
 	
-	\hline \multicolumn{3}{| c |}{\textbf{Salvage priority list}}\\\hline
-	\endhead
-	
-	\multicolumn{3}{|r|}{\textit{continued on next page}}\\\hline
-	\endfoot
-	
-	\endlastfoot
 	
 	\textbf{Item:} & \textbf{Location:} & \textbf{Priority:}\\\hline
 	Backups & Basement & 1\\
@@ -91,4 +65,7 @@ The numbers in table \ref{tab:salvage_prio} are based on the following criteria.
 	Other servers & 3rd floor & 3 \\
 	Non storage equipment over 1000000ptas & All the building & 3 \\
 	Non storage equipment under 1000000ptas & All the building & 3 \\\hline	
-\end{longtable}
+	\end{tabular}
+	\caption{ List of all assets in priority human lives are not in the list, but always have top priority. This list shall be followed when several assets are at risk from one or several incidents at the same time.}
+	\label{tab:salvage_prio}
+\end{table}
