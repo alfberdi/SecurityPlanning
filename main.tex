@@ -1,45 +1,40 @@
-%% Languages: norsk				
-%%						english			
+%% Templates: CIMET, BIND, BIS, BPU, BRD, BSP, MIS, MMT
+%% Languages: "norsk" and "english"
 %% Styles:		twoside, 		The margins will differ dependent on right/left pages
 %%						openright		The first page is a "right" page
-%%  indexes:		listings		Show figure list, table list
-%%						glossary		Show glossary and abbreviation list
-%%						todo				Show list of todo-notes in documents
-%%						%
-\documentclass[medieteknikk]{gucmasterthesis}
-%\renewcommand{\familydefault}{\sfdefault}
-%\rmfamily
+%%						infoPage		Adds page with information about GUC after frontpage
+%%						listing			Show lists of figures, tables, code snippets, etc.
+%%						dictionary	Show dictionary and abbreviation. Requires listing 	
+\documentclass[MIS, twoside, openright, english ]{gucthesis}
 
-\usepackage[utf8]{inputenc}     % For utf8 encoded .tex files
-\usepackage{ifthen}
-\usepackage[english]{babel}     % For chapter headings etc.
-\usepackage{graphicx}
-\usepackage{longtable}
+\input{gucthesis}
 
 \begin{document}
-	%\input{glossary}
-	\title{Project Report: Traceroute}
-	\thesistitle{Project Report: Traceroute}
-	\thesisauthor{Leonard Eschenbaum, Adri\'an Alberdi Ainciburu}
-	\thesisdate{\gucmasterthesisdate}
-	\useyear{2014}
+	\input{glossary}
+	%\input{Chapters/preamble/BachelorThesisData} 
 	\makefrontpages
-	
+	%\input{Chapters/preamble/preface}
 	\tableofcontents
-	
+	\vfill \hfill \textbf{ Word count: \wordcount} % Requirement according to the template
+			% to print word count without appendix
+
+	\showLists
+
 	%% Chapters for the text
-	\chapter{Business description}
 	\input{Chapters/Business_Description}
 	\input{Chapters/Business_Impact_Analysis}
 	\input{Chapters/contingency_plan}
-	
+	%\input{chapters/}
+	%\input{chapters/}
+
 	%% Bibliography
 	\bibliographystyle{unsrt}
 	\bibliography{main}
 
 	%% APPENDICES
 	\appendix %after this line all chapters will have leters instead of numbers
-	\input{appendices}	%include file for all appendices
+	\input{appendices}
 
 \end{document}
+
 
