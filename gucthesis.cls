@@ -51,7 +51,7 @@
 %% 'gucmasterthesis.cls' - a LaTeX class for master's theses at GUC
 %%
 
-%%	Magnus Øverbø	-	2014/02/06
+%%	Magnus Ã˜verbÃ¸	-	2014/02/06
 %%		* Removed redundant code from creating front pages
 %%		* Specific types of study programs are more easily created
 %%		* Added a separate counter for wordcount
@@ -81,7 +81,7 @@
   [\gucthesisdate\space
    v\gucthesisversion\space
    Copyright (C) 2011 Ivar Farup and Simon McCallum
-	 Modified by Magnus Øverbø 2014]
+	 Modified by Magnus Ã˜verbÃ¸ 2014]
 
 %% CLASS FILE COMMANDS
 \LoadClass[a4paper]{report}
@@ -344,27 +344,28 @@
 % Lists (itemize and enumerate)
 \renewenvironment{itemize}{\begin{list}{\ensuremath\bullet}%
     {\labelwidth=.5em%
-      \labelsep=1em%
+      \labelsep=.5em%
       \leftmargin=\labelwidth%
       \advance\leftmargin\labelsep%
       \rightmargin=0pt%
-      \topsep=5pt%
-      \parsep=0pt%
-      \partopsep=\baselineskip%
+      \topsep=0pt%
+      \parsep=3pt%
+      \partopsep=0pt%
       \itemsep=\topsep%
       }}{\end{list}}
 
 \newcounter{nenum}
-\renewenvironment{enumerate}{\begin{list}{\llap{\arabic{nenum}.}}%
+\renewenvironment{enumerate}{
+	\begin{list}{\llap{\arabic{nenum}.}}%
      {\usecounter{nenum}%
-      \labelwidth=.7em%
-      \labelsep=.8em%
+      \labelwidth=.5em%
+      \labelsep=.5em%
       \leftmargin=\labelwidth%
       \advance\leftmargin\labelsep%
       \rightmargin=0pt%
-      \topsep=5pt%
-      \parsep=0pt%
-      \partopsep=0pt%
+      \topsep=0pt%
+      \parsep=3pt%
+      \partopsep=3pt%
       \itemsep=\topsep%
       }%
    }{\end{list}}
@@ -390,7 +391,7 @@
   ``BRD'' Bachelor i drift av nettverk og datasystemer,\\
   ``BIS'' Bachelor i Informasjonssikkerhet,\\
   ``BPU'' Bachelor i Programvareutvikling, \\
-  ``BIND'' Bachelor i Ingeniørfad - data. 
+  ``BIND'' Bachelor i IngeniÃ¸rfad - data. 
 	}
 }
 
