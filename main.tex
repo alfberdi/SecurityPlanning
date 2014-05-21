@@ -9,13 +9,16 @@
 
 \input{gucthesis}
 
+\renewcommand{\appendixname}{Appendix }
+\renewcommand{\appendixtocname}{List of appendices}
+
 \begin{document}
 	\input{glossary}
 	\makefrontpages
 	\clearpage
 	\input{Chapters/Executive_summary}
 	\tableofcontents
-	\vfill \hfill \textbf{ Word count: \wordcount} % Requirement according to the template
+	\vfill \hfill \textbf{ Word count: 10990} % Requirement according to the template
 			% to print word count without appendix
 
 	\showLists
@@ -28,8 +31,19 @@
 	%\input{chapters/}
 
 	%% APPENDICES
-	\appendix %after this line all chapters will have leters instead of numbers
-	\input{appendices}
+%	\appendix %after this line all chapters will have leters instead of numbers
+	\appendixtocon
+	\appendixtitletocon
+	\appendixtitleon
+	\appendixheaderon
+%	\appendix
+%	\addappheadtotoc
+%	\appendixpageof
+	
+	\begin{appendices}
+		\input{appendices}
+	\end{appendices}
+
 
 	%% Bibliography
 	\nocite{*}

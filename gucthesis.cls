@@ -109,6 +109,7 @@
 \RequirePackage{bbding}
 \RequirePackage{caption}
 \RequirePackage{todonotes}
+\RequirePackage{appendix}
 
 %	Counters
 \newcounter{firstchapter}       % hack to find out where to start
