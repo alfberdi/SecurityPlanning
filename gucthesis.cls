@@ -470,7 +470,7 @@
 % Get education level
 \newcommand\gmt@bachName{
 	\if@masters
-		\if@norsk	Masteroppgave		\else	Master's Thesis		\fi
+		\if@norsk	Masteroppgave		\else	IMT3521		\fi
 	\else
 		\if@norsk	Bacheloroppgave	\else	Bachelor's Thesis	\fi
 	\fi
@@ -478,7 +478,7 @@
 	
 %	Get ECTS score for the education
 \newcommand\gmt@ECTS{
-	\if@masters	-	30 ECTS \\
+	\if@masters	-	10 ECTS \\
 	\else				-	20 ECTS \\
 	\fi
 }
@@ -502,7 +502,7 @@
  	\renewcommand\gmt@firstpagetext{%
 		\gmt@bachName	\gmt@ECTS
 		\if@masters
-			\if@norsk	Master i	\else	Master of Science in	\fi
+			\if@norsk	Master i	\else	Introduction to Security Planning and	\fi
 		\else
 			\if@norsk Bacher i 	\else	Bachelor of Science in\fi
 		\fi
@@ -542,7 +542,7 @@
 \DeclareOption{BIS}{%
 	\renewcommand\gmt@ProgName{
 		\if@norsk	Informasjonssikkerhet \\
-		\else			Information Security \\
+		\else		Incident Management \\
 		\fi
 	}
 	\gmt@ThesisData
@@ -572,7 +572,7 @@
   \@masterstrue
 	\renewcommand\gmt@ProgName{
 		\if@norsk	Informasjonssikkerhet  \\
-		\else			Information Security  \\
+		\else		Incident Management  \\
 		\fi
 	}
 	\gmt@ThesisData
